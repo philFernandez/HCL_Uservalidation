@@ -16,7 +16,9 @@ public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
         try {
             HttpSession session = request.getSession(false);
+            // Invalidate the logged in users' session
             session.invalidate();
+            // and redirect to the logout page
             response.sendRedirect("logged_out.jsp");
         } catch (IOException e) {
             e.printStackTrace();

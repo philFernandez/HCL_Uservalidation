@@ -8,7 +8,13 @@
 </head>
 
 <body>
-    <p>You logged out boi!!</p>
+    <h1>You've Logged Out!</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="index.jsp"><button>Login</button></a>
+
 </body>
 
 </html>

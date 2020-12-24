@@ -26,8 +26,9 @@ public class ValidateServlet extends HttpServlet {
             } else {
                 session = request.getSession(false);
                 session.invalidate();
-                response.sendRedirect("bad_login.html");
+                response.sendRedirect("bad_login.jsp");
             }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
