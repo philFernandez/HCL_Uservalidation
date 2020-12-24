@@ -8,4 +8,4 @@
 | -------- | -------- |
 | John     | 1234     |
 | Joe      | 4321     |
-#### Notice that the "dashboard" is customized based on user
+#### Notice that the "dashboard" is customized based on the logged in user
