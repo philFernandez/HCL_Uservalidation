@@ -8,13 +8,14 @@
 </head>
 
 <body>
-    <h1>Welcome to your Dashboard <%=session.getAttribute("username")%> !</h1>
-    <br>
-    <br>
-    <br>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <h1>Welcome to your Dashboard <%=session.getAttribute("username")%> !</h1>
+        <br>
+        <br>
+        <br>
 
-    <form action="Logout" method="post">
-        <button>Logout</button>
-    </form>
+        <form action="Logout" method="post">
+            <button>Logout</button>
+        </form>
 
 </html>
