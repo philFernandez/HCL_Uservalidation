@@ -1,5 +1,8 @@
 package com.model;
 
+/**
+ * model the data needed for the login
+ */
 public class LoginModel {
     private String username;
     private String password;

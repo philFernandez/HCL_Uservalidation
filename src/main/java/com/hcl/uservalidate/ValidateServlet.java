@@ -8,6 +8,9 @@ import javax.servlet.http.HttpSession;
 import com.model.LoginModel;
 import com.service.UserService;
 
+/**
+ * Servlet for handling login post request. This servlet is configured in web.xml file
+ */
 public class ValidateServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -21,11 +24,15 @@ public class ValidateServlet extends HttpServlet {
             boolean isLoggedIn = loginService.login(loginModel);
             if (isLoggedIn) {
                 session = request.getSession();
+                // save logged in users' session
                 session.setAttribute("username", loginModel.getUsername());
+                // redirect to logged_in dashboard page
                 response.sendRedirect("logged_in.jsp");
             } else {
+                // if login failed invalidate any session
                 session = request.getSession(false);
                 session.invalidate();
+                // redirecto to error page
                 response.sendRedirect("bad_login.jsp");
             }
 
