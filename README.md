@@ -4,4 +4,7 @@
 
 ----
 #### There are two valid users
-1) `username:` John `password:` 1234
+| Username | Password |
+| -------- | -------- |
+| John     | 1234     |
+| Joe      | 4321     |
